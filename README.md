@@ -1,9 +1,18 @@
 # discordbots.org-api-patch
 #### A patch for the discordbots.org-api wrapper
 
-## Example
+## Get started
+
+You'll first have to add the package to your `package.json`, adding this in the `dependencies` element:
+
+```json
+    "discordbots.org-api-patch": "https://github.com/adri326/discordbots.org-api-patch.git"
+```
+
+Then, you can start using it like this:
+
 ```js
-var dbapi = require("./discordbots.org-api-patch");
+var dbapi = require("discordbots.org-api-patch");
 
 var db = new dbapi("<Your token here>")
 
