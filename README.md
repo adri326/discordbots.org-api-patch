@@ -1,7 +1,7 @@
 # discordbots.org-api-patch
 #### A patch for the discordbots.org-api wrapper
 
-## Get started
+## Getting started
 
 You'll first have to add the package to your `package.json`, adding this in the `dependencies` element:
 
