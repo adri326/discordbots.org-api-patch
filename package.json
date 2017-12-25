@@ -1,14 +1,14 @@
 {
-  "name": "discord-bots-api",
-  "version": "0.0.2",
-  "description": "A wrapper made for the Discord Bots API",
+  "name": "discordbots.org-api-patch",
+  "version": "0.0.2b",
+  "description": "A patch for the discordbots.org-api wrapper",
   "main": "index.js",
   "scripts": {
     "test": "npm install"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nekonez/dbapi.git"
+    "url": "git+https://github.com/adri326/discordbots.org-api-patch.git"
   },
   "keywords": [
     "discord",
@@ -17,9 +17,9 @@
   "author": "Marisa Kirisame",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nekonez/dbapi/issues"
+    "url": "https://github.com/adri326/discordbots.org-api-patch/issues"
   },
-  "homepage": "https://github.com/nekonez/dbapi#readme",
+  "homepage": "https://github.com/adri326/discordbots.org-api-patch#readme",
   "dependencies": {
     "request": "^2.76.0",
     "request-promise-any": "^1.0.3"

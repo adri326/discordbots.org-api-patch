@@ -1,24 +1,26 @@
-# dbapi
-#### A wrapper made for the Discord Bots API
+# discordbots.org-api-patch
+#### A patch for the discordbots.org-api wrapper
 
 ## Example
-```
-var dbapi = require("./discordbots.js/index.js");
+```js
+var dbapi = require("./discordbots.org-api-patch");
 
-var db = new dbapi("Token")
+var db = new dbapi("<Your token here>")
 
-db.getStats("140707547634991104").then((botData) => { console.log(botData) })
+db.getStats("<Your bot ID>").then((botData) => {
+  console.log(botData)
+}).catch(console.error)
 ```
 
 ## NPM Package
-https://www.npmjs.com/package/discord-bots-api
+https://www.npmjs.com/package/discordbots.org-api-patch
 
 ## Documentation
 
-**.bots**
+**.getBots**
 
 ```js
-db.bots.then((botData) => { console.log(botData) })
+db.getBots.then((botData) => { console.log(botData) })
 ```
 Returns all the data added to the API.
 
@@ -32,7 +34,7 @@ db.getInfo(botID).then((botData) => { console.log(botData) })
 Returns information about a bot on the API.
 
 <hr>
-    
+
 **.getStats(botID)**
 
 ```js
@@ -54,7 +56,7 @@ Returns the bots a user owns.
 **.postStats(botID, server_count)**
 
 ```js
-db.postStats(botID, 1).then((botData) => { console.log(botData) })
+db.postStats(botID, serverCount).then((botData) => { console.log(botData) })
 ````
 Returns undefined. Bot stats were posted.
 
@@ -63,10 +65,10 @@ Returns undefined. Bot stats were posted.
 **.postStatsShard(botID, shardID, shard_count, server_count)**
 
 ```js
-db.postStatsShard(botID, 1, 1, 1).then((botData) => { console.log(botData) })
+db.postStatsShard(botID, shardID, shard_count, server_count).then((botData) => { console.log(botData) })
 ````
 Returns undefined. Bot stats were posted via shard.
 
-#### How do i get a token? 
+#### How do i get a token?
 
-From [here](https://bots.discord.pw/api)
+From [here](https://discordbots.org/api/docs)
